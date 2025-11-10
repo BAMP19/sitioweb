@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Personal 4P</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="iconos/favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Ana Sofia Beltran</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="biografia.html">Biografía</a></li>
+          <li><a href="logros-academicos.html">Logros académicos</a></li>
+          <li><a href="vida-universitaria.html">Vida universitaria</a></li>
+          <li><a href="logros-deportivos.html">Logros deportivos</a></li>
+          <li><a href="the-crew-2025.html">The Crew 2025</a></li>
+          <li><a href="logros-profesionales.html">Logros profesionales</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home-page" class="page active">
+    <section class="hero-section" aria-label="Presentación principal">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="fade-in">Hola, esta es la página web de</h1>
+        <h2 class="nombre-principal">Ana Sofia Beltran Escarpeta</h2>
+        <button class="btn-comenzar" onclick="scrollToContent()">Comencemos</button>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">↓</div>
+    </section>
+
+    <section id="content-section" class="content-section">
+      <article class="sobre-mi" aria-labelledby="sobre-titulo">
+        <h2 id="sobre-titulo">Acerca De Mí</h2>
+        <div class="fotos-grid">
+          <figure class="foto-card">
+            <img src="imagen/yo.jpg" alt="Ana Sofia - foto">
+            <figcaption>Tengo 17 años, me encanta viajar, los animales y la musica.</figcaption>
+          </figure>
+          <figure class="foto-card">
+            <img src="imagen/hobby.jpg" alt="Hobby" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800'">
+            <figcaption>Objetivos y visión personal.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <section class="apartados-section" aria-labelledby="apartados-titulo">
+        <h2 id="apartados-titulo">Explora Mi Trayectoria</h2>
+        <div class="apartados-grid">
+          <a class="apartado-card" href="logros-academicos.html">
+            <div class="icono">
+                <img src="iconos/graduacion.png" alt="Graduación" />
+            </div>
+            <div class="icono azul">🎓</div>
+            <h3>Logros académicos</h3>
+            <p>Formación y reconocimientos académicos.</p>
+          </a>
+
+          <a class="apartado-card" href="logros-deportivos.html">
+            <div class="icono verde">🏋️</div>
+            <h3>Logros deportivos</h3>
+            <p>Pasión por el deporte y competencias.</p>
+          </a>
+
+          <a class="apartado-card" href="vida-universitaria.html">
+            <div class="icono amarillo">🎒</div>
+            <h3>Vida universitaria</h3>
+            <p>Proyección académica y proyectos futuros.</p>
+          </a>
+
+          <a class="apartado-card" href="biografia.html">
+            <div class="icono">🧾</div>
+            <h3>Biografía</h3>
+            <p>Datos personales y recorrido de vida.</p>
+          </a>
+
+          <a class="apartado-card" href="the-crew-2025.html">
+            <div class="icono">🚀</div>
+            <h3>The Crew 2025</h3>
+            <p>Equipo, visión y proyectos 2025.</p>
+          </a>
+
+          <a class="apartado-card" href="logros-profesionales.html">
+            <div class="icono">💼</div>
+            <h3>Logros profesionales</h3>
+            <p>Trayectoria profesional y metas.</p>
+          </a>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>Ana Sofia - 11 F</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
